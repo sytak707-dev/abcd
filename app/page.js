@@ -32,8 +32,8 @@ function IconArrow() {
 const PAIN_POINTS = [
   '에이전시 담당자가 바뀌고 나서 콘텐츠 퀄리티가 달라졌다',
   '리포트를 받았는데 숫자가 좋은 건지 나쁜 건지 모르겠다',
-  '빠르게 대응하고 싶은데 에이전시는 "다음주에…"',
-  '우리 브랜드 느낌이 아닌 것 같은데 뭐라 설명하기 어렵다',
+  '트렌드는 매일 바뀌는데 에이전시와의 소통은 그보다 느려, 항상 뒤쳐질 때',
+  '우리 브랜드의 느낌이 에이전시에 제대로 전달되지 않을 때',
 ]
 
 const COMPARISON = [
@@ -116,20 +116,20 @@ export default function Home() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-slate-800 border border-slate-700
                           rounded-full px-4 py-1.5 mb-10">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+            <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
             <span className="text-slate-300 text-xs font-medium tracking-wide">
               베타 테스터 {BETA_SLOTS}팀 모집중
             </span>
           </div>
 
-          <h1 className="text-[2.6rem] md:text-6xl font-black text-white leading-[1.15] tracking-tight mb-7">
+          <h1 className="text-[2.6rem] md:text-6xl font-extrabold text-white leading-[1.3] tracking-normal mb-7">
             에이전시에 월 수백만원 쓰는데<br />
             <span className="text-slate-400">뭐가 되고 있는지 모르시겠죠?</span>
           </h1>
 
           <p className="text-slate-400 text-lg md:text-xl leading-relaxed mb-12 max-w-2xl">
             광고, 콘텐츠, 리포트까지<br className="hidden md:block" />
-            에이전시가 하던 일을 <span className="text-white font-semibold">1/8 비용</span>으로 직접 보세요
+            에이전시가 하던 일을 <span className="text-white font-semibold">1/10 비용</span>으로
           </p>
 
           <button
@@ -138,21 +138,15 @@ export default function Home() {
                        text-slate-900 font-bold px-8 py-4 rounded-full text-base
                        transition-colors duration-150"
           >
-            얼리액세스 신청하기
+            무료 체험판 신청하기
             <IconArrow />
           </button>
-
-          {/* Social proof mini */}
-          <p className="mt-8 text-slate-500 text-sm">
-            신청 후 24시간 내 창업자 직접 연락 &nbsp;·&nbsp; 첫 달 무료 세팅
-          </p>
         </div>
       </section>
 
       {/* ── Section 2: Pain Points ─────────────────────────────── */}
       <section className="bg-white px-6 py-24 md:py-32">
         <div className="max-w-3xl mx-auto">
-          <span className="section-label">Pain Point</span>
           <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-14 leading-tight">
             이런 경험 있으신가요?
           </h2>
@@ -248,10 +242,8 @@ export default function Home() {
             베타 테스터 {BETA_SLOTS}팀을 모집합니다
           </h2>
           <p className="text-slate-500 text-base md:text-lg leading-relaxed mb-12">
-            신청 후 24시간 내에 창업자가 직접 연락드립니다.<br />
-            지금 신청하시면{' '}
-            <span className="text-slate-900 font-semibold">첫 달 무료</span>로
-            직접 세팅해드립니다.
+            베타 테스터 {BETA_SLOTS}팀에게는 전 서비스가 무료로 제공됩니다.<br />
+            출시 알람을 받을 메일 주소를 남겨주세요.
           </p>
 
           {submitted ? (
@@ -360,7 +352,7 @@ export default function Home() {
                     제출 중...
                   </>
                 ) : (
-                  '얼리액세스 신청하기'
+                  '무료 체험판 신청하기'
                 )}
               </button>
 
@@ -377,17 +369,14 @@ export default function Home() {
         <div className="max-w-3xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 border border-slate-700 rounded-full
                           px-4 py-1.5 mb-8">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+            <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
             <span className="text-slate-400 text-xs font-medium tracking-wide">
               베타 테스터 모집중
             </span>
           </div>
 
-          <p className="text-white text-xl md:text-2xl font-bold leading-relaxed mb-3">
+          <p className="text-white text-xl md:text-2xl font-bold leading-relaxed mb-12">
             현재 베타 테스터 모집 중 —
-          </p>
-          <p className="text-slate-400 text-base md:text-lg leading-relaxed mb-12">
-            신청해주신 모든 분께 창업자가 직접 1:1로 세팅해드립니다
           </p>
 
           <button
