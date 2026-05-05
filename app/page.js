@@ -249,12 +249,15 @@ export default function Home() {
           {submitted ? (
             /* ── Success state ── */
             <div className="bg-slate-900 rounded-2xl px-8 py-14 text-center">
-              <div className="text-5xl mb-5">😊</div>
-              <p className="text-white text-xl font-bold mb-2">
+              <div className="flex items-center justify-center mb-8">
+                <div className="w-16 h-16 rounded-full border border-slate-700 flex items-center justify-center">
+                  <svg className="w-7 h-7 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+              </div>
+              <p className="text-white text-xl font-bold">
                 신청해주셔서 감사합니다.
-              </p>
-              <p className="text-slate-400 text-base">
-                24시간 내에 연락드릴게요
               </p>
             </div>
           ) : (
