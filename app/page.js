@@ -127,9 +127,11 @@ export default function Home() {
             <span className="text-slate-400">뭐가 되고 있는지 모르시겠죠?</span>
           </h1>
 
+          <p className="text-slate-400 text-lg md:text-xl leading-relaxed mb-4 max-w-2xl">
+            광고, 콘텐츠, 리포트까지 에이전시가 하던 일을 <span className="text-white font-semibold">1/10 비용</span>으로
+          </p>
           <p className="text-slate-400 text-lg md:text-xl leading-relaxed mb-12 max-w-2xl">
-            광고, 콘텐츠, 리포트까지<br className="hidden md:block" />
-            에이전시가 하던 일을 <span className="text-white font-semibold">1/10 비용</span>으로
+            전문 마케터 없이도 에이전시 수준으로 운영되는 툴
           </p>
 
           <button
@@ -175,6 +177,74 @@ export default function Home() {
               아래 연락처를 남겨주세요
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* ── Section 2-B: Product Value ─────────────────────────── */}
+      <section className="bg-slate-900 px-6 py-24 md:py-32">
+        <div className="max-w-4xl mx-auto">
+
+          {/* Headline */}
+          <h2 className="text-3xl md:text-5xl font-bold text-white leading-[1.4] mb-16">
+            마케팅 대행사에 매달 수백만원,<br />
+            <span className="text-slate-400">매출은 그만큼 늘었나요?</span>
+          </h2>
+
+          {/* Card */}
+          <div className="rounded-2xl border border-slate-700 overflow-hidden">
+
+            {/* Card header */}
+            <div className="bg-slate-800 px-6 py-4 flex items-center justify-between border-b border-slate-700">
+              <div className="flex items-center gap-3">
+                <div className="flex gap-1.5">
+                  <span className="w-3 h-3 rounded-full bg-slate-600" />
+                  <span className="w-3 h-3 rounded-full bg-slate-600" />
+                  <span className="w-3 h-3 rounded-full bg-slate-600" />
+                </div>
+                <span className="text-slate-300 text-sm font-semibold tracking-wide">
+                  {SERVICE_NAME}
+                </span>
+              </div>
+              <span className="text-slate-400 text-sm">
+                마케팅 성과를 바로 숫자로 확인해보세요.
+              </span>
+            </div>
+
+            {/* Card body */}
+            <div className="bg-slate-800/50 px-6 py-8 grid md:grid-cols-2 gap-3">
+              {[
+                '월간 콘텐츠 캘린더 1개',
+                '인스타그램 피드 카피 주 3개',
+                '블로그 포스팅 초안 월 4개',
+                '숏폼 영상 주 1개',
+                '메타 광고 카피 소재 월 8개',
+                '월간 성과 리포트 1개',
+                '카톡 피드백 무제한',
+              ].map((item, i) => (
+                <div key={i} className="flex items-center gap-3 bg-slate-800 rounded-xl px-5 py-4 border border-slate-700">
+                  <span className="text-blue-400 text-lg flex-shrink-0">✓</span>
+                  <span className="text-slate-200 text-sm md:text-base">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* CTA */}
+          <p className="mt-12 text-slate-400 text-lg text-center">
+            {SERVICE_NAME} 대시보드에서 바로 확인해보세요
+          </p>
+          <div className="mt-6 flex justify-center">
+            <button
+              onClick={scrollToForm}
+              className="inline-flex items-center gap-3 bg-white hover:bg-slate-100
+                         text-slate-900 font-bold px-8 py-4 rounded-full text-base
+                         transition-colors duration-150"
+            >
+              무료 체험판 신청하기
+              <IconArrow />
+            </button>
+          </div>
+
         </div>
       </section>
 
