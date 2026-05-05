@@ -1,4 +1,5 @@
 import { Noto_Sans_KR } from 'next/font/google'
+import Script from 'next/script'
 import './globals.css'
 import { SERVICE_NAME, SERVICE_TAGLINE } from '@/lib/constants'
 
@@ -17,6 +18,20 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ko" className={notoSans.variable}>
+      <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-B7GZ5J8XBG"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-B7GZ5J8XBG');
+          `}
+        </Script>
+      </head>
       <body className="font-sans antialiased bg-white text-slate-900">
         {children}
       </body>
