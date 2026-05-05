@@ -32,8 +32,8 @@ function IconArrow() {
 const PAIN_POINTS = [
   '에이전시 담당자가 바뀌고 나서 콘텐츠 퀄리티가 달라졌다',
   '리포트를 받았는데 숫자가 좋은 건지 나쁜 건지 모르겠다',
-  '트렌드는 매일 바뀌는데 에이전시와의 소통은 그보다 느려, 항상 뒤쳐질 때',
-  '우리 브랜드의 느낌이 에이전시에 제대로 전달되지 않을 때',
+  '트렌드는 매일 바뀌는데, 에이전시와의 소통은 그것보다 느려 항상 뒤쳐진다',
+  '우리 브랜드의 무드가 에이전시에 제대로 전달되지 않는다',
 ]
 
 const COMPARISON = [
@@ -104,7 +104,7 @@ export default function Home() {
             className="bg-slate-900 hover:bg-slate-700 text-white text-sm font-semibold
                        px-5 py-2.5 rounded-full transition-colors duration-150"
           >
-            얼리액세스 신청
+            무료 체험판 신청
           </button>
         </div>
       </nav>
@@ -122,7 +122,7 @@ export default function Home() {
             </span>
           </div>
 
-          <h1 className="text-[2.6rem] md:text-6xl font-extrabold text-white leading-[1.3] tracking-normal mb-7">
+          <h1 className="text-[2.6rem] md:text-6xl font-semibold text-white leading-[1.45] tracking-normal mb-7">
             에이전시에 월 수백만원 쓰는데<br />
             <span className="text-slate-400">뭐가 되고 있는지 모르시겠죠?</span>
           </h1>
