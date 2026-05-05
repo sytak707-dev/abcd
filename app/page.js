@@ -122,15 +122,15 @@ export default function Home() {
             </span>
           </div>
 
-          <h1 className="text-[2.6rem] md:text-6xl font-semibold text-white leading-[1.45] tracking-normal mb-7">
-            에이전시에 월 수백만원 쓰는데<br />
+          <h1 className="text-[2.6rem] md:text-6xl font-semibold text-white leading-[1.65] tracking-normal mb-7">
+            대행사에 월 수백만원 쓰는데<br />
             <span className="text-slate-400">뭐가 되고 있는지 모르시겠죠?</span>
           </h1>
 
-          <p className="text-slate-400 text-lg md:text-xl leading-relaxed mb-4 max-w-2xl">
+          <p className="text-slate-400 text-lg md:text-xl leading-snug mb-2 max-w-2xl">
             광고, 콘텐츠, 리포트까지 에이전시가 하던 일을 <span className="text-white font-semibold">1/10 비용</span>으로
           </p>
-          <p className="text-slate-400 text-lg md:text-xl leading-relaxed mb-12 max-w-2xl">
+          <p className="text-slate-400 text-lg md:text-xl leading-snug mb-12 max-w-2xl">
             전문 마케터 없이도 에이전시 수준으로 운영되는 툴
           </p>
 
@@ -185,10 +185,14 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
 
           {/* Headline */}
-          <h2 className="text-3xl md:text-5xl font-bold text-white leading-[1.4] mb-16">
+          <h2 className="text-3xl md:text-5xl font-bold text-white leading-[1.4] mb-6">
             마케팅 대행사에 매달 수백만원,<br />
             <span className="text-slate-400">매출은 그만큼 늘었나요?</span>
           </h2>
+
+          <p className="text-slate-400 text-lg mb-12">
+            {SERVICE_NAME} 대시보드에서 바로 확인해보세요
+          </p>
 
           {/* Card */}
           <div className="rounded-2xl border border-slate-700 overflow-hidden">
@@ -229,11 +233,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* CTA */}
-          <p className="mt-12 text-slate-400 text-lg text-center">
-            {SERVICE_NAME} 대시보드에서 바로 확인해보세요
-          </p>
-          <div className="mt-6 flex justify-center">
+          <div className="mt-10 flex justify-center">
             <button
               onClick={scrollToForm}
               className="inline-flex items-center gap-3 bg-white hover:bg-slate-100
